@@ -131,7 +131,6 @@
     .cause-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:.65rem;color:var(--forest)}
     .cause-desc{font-size:.875rem;color:var(--text-lt);line-height:1.75;flex:1}
     .cause-cta{margin-top:1.2rem}.cause-cta a{font-size:.82rem;font-weight:600;color:var(--gold-dk);display:inline-flex;align-items:center;gap:.4rem;transition:gap .2s,color .2s}.cause-cta a:hover{gap:.7rem;color:var(--forest)}
-    /* Cause art photos handled by .cause-art img above */
 
     #quote{padding:5rem 2rem;position:relative;overflow:hidden;text-align:center;background:var(--forest);color:white}
     .quote-pattern{position:absolute;inset:0;opacity:.05;background-image:repeating-linear-gradient(60deg,rgba(201,148,58,.5) 0,rgba(201,148,58,.5) 1px,transparent 0,transparent 50%),repeating-linear-gradient(120deg,rgba(201,148,58,.5) 0,rgba(201,148,58,.5) 1px,transparent 0,transparent 50%),repeating-linear-gradient(0deg,rgba(201,148,58,.3) 0,rgba(201,148,58,.3) 1px,transparent 0,transparent 50%);background-size:60px 60px}
@@ -240,10 +239,10 @@
 
 <nav id="nav">
   <a href="#hero" class="logo"><img src="/Moosatrustlogo.png" alt="Moosa Trust UK" class="logo-img" width="38" height="38"><div class="logo-text">Moosa Trust <span>UK Charitable Trust</span></div></a>
-  <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#causes">Causes</a></li><li><a href="/projects/sri-lanka-well/">Projects</a></li><li><a href="#trustees">Trustees</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a href="#donate" class="nav-cta">Donate</a></li></ul>
+  <ul class="nav-links"><li><a href="#about">About</a></li><li><a href="#causes">Causes</a></li><li><a href="/projects/sri-lanka-well/">Projects</a></li><li><a href="/blog/">Blog</a></li><li><a href="#trustees">Trustees</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li><li><a href="#donate" class="nav-cta">Donate</a></li></ul>
   <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
-<div class="mob-menu" id="mobMenu" role="dialog" aria-label="Navigation menu"><button class="mob-close" id="mobClose" aria-label="Close menu">✕</button><a href="#about">About</a><a href="#causes">Causes</a><a href="/projects/sri-lanka-well/">Projects</a><a href="#trustees">Trustees</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#donate" style="color:var(--gold)">Donate</a></div>
+<div class="mob-menu" id="mobMenu" role="dialog" aria-label="Navigation menu"><button class="mob-close" id="mobClose" aria-label="Close menu">✕</button><a href="#about">About</a><a href="#causes">Causes</a><a href="/projects/sri-lanka-well/">Projects</a><a href="/blog/">Blog</a><a href="#trustees">Trustees</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#donate" style="color:var(--gold)">Donate</a></div>
 
 <section id="hero">
   <div class="hero-bg"><div class="hero-ring"></div><div class="hero-ring"></div><div class="hero-ring"></div>
@@ -421,5 +420,6 @@ async function submitForm(){clearErrors();if(document.getElementById('fwebsite')
 document.querySelectorAll('#fg-name input,#fg-email input').forEach(i=>{i.addEventListener('input',()=>i.closest('.fg').classList.remove('has-error'))});
 document.getElementById('yr').textContent=new Date().getFullYear();
 </script>
+
 </body>
 </html>
