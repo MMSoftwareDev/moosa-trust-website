@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moosatrustuk.org/sitemap.xml

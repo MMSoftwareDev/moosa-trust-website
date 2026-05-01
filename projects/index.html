@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Moosa Trust UK</title>
+  <meta name="description" content="See all Moosa Trust UK projects — clean water wells, education initiatives, and emergency relief. Every project is documented, costed, and reported back to donors."/>
+  <meta property="og:title" content="Projects | Moosa Trust UK"/>
+  <meta property="og:description" content="Clean water, education, and poverty relief projects funded by Moosa Trust UK."/>
+  <meta property="og:url" content="https://moosatrustuk.org/projects/"/>
+  <meta property="og:image" content="https://moosatrustuk.org/Moosatrustlogo.png"/>
+  <meta property="og:type" content="website"/>
+  <link rel="canonical" href="https://moosatrustuk.org/projects/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600&family=DM+Sans:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/Moosatrustlogo.png">
+  <style>
+    :root{--cream:#FAF8F3;--stone:#F3F1EA;--forest:#1B4332;--forest-md:#2d6a4f;--mint:#52b788;--gold:#c9943a;--gold-dk:#a07828;--gold-lt:#e8b86d;--text:#1B4332;--text-md:#3d5c4a;--text-lt:#5c6b5e;--text-muted:#7a8a7e;--gborder:rgba(27,67,50,.1)}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+    a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important}}
+
+    nav{position:relative;z-index:10;padding:1.2rem 2rem;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--gborder);background:white}
+    .logo{display:flex;align-items:center;gap:.7rem;color:var(--forest)}
+    .logo-img{width:36px;height:36px;border-radius:8px;object-fit:contain}
+    .logo-text{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;line-height:1.2}
+    .logo-text span{display:block;font-size:.6rem;font-family:'DM Sans',sans-serif;font-weight:400;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dk)}
+    .nav-back{font-size:.82rem;color:var(--text-lt);display:flex;align-items:center;gap:.4rem;transition:color .2s}
+    .nav-back:hover{color:var(--forest)}
+    .nav-back svg{width:16px;height:16px;flex-shrink:0}
+
+    main{flex:1;position:relative;z-index:1}
+    .hero{background:var(--forest);color:white;padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(45,106,79,.5) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 85% 85%,rgba(201,148,58,.15) 0%,transparent 50%)}
+    .hero-inner{position:relative;z-index:1;max-width:700px;margin:0 auto}
+    .label{font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-lt);font-weight:600;display:block;margin-bottom:1rem}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,6vw,3.4rem);font-weight:800;line-height:1.1;margin-bottom:.9rem}
+    .hero h1 em{font-style:italic;color:var(--gold-lt)}
+    .hero-sub{color:rgba(255,255,255,.65);font-size:1rem;line-height:1.7;max-width:520px;margin:0 auto;font-weight:300}
+    .hero-fade{position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,var(--cream));z-index:1;pointer-events:none}
+
+    .list-wrap{max-width:820px;margin:0 auto;padding:4rem 2rem 5rem}
+    .filter-bar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.2rem;font-size:.78rem;color:var(--text-muted)}
+    .filter-chip{background:var(--stone);border:1px solid var(--gborder);color:var(--text-lt);padding:.35rem .85rem;border-radius:999px;font-weight:600;letter-spacing:.04em}
+    .project-card{display:block;background:white;border:1px solid var(--gborder);border-radius:20px;padding:2rem 2.2rem;margin-bottom:1.4rem;transition:all .35s}
+    .project-card:hover{border-color:rgba(27,67,50,.18);transform:translateY(-3px);box-shadow:0 16px 36px rgba(27,67,50,.08)}
+    .project-status{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:.28rem .7rem;border-radius:999px;margin-bottom:1rem}
+    .status-funded{background:rgba(82,183,136,.14);border:1px solid rgba(82,183,136,.3);color:#2d8a5e}
+    .status-funded .dot{width:6px;height:6px;border-radius:50%;background:var(--mint);animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.5}50%{opacity:1}}
+    .project-cause{font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;color:var(--gold-dk);font-weight:600;margin-bottom:.6rem}
+    .project-title{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--forest);line-height:1.25;margin-bottom:.6rem}
+    .project-desc{font-size:.92rem;color:var(--text-lt);line-height:1.75;margin-bottom:1rem}
+    .project-stats{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.2rem;padding:.9rem 0;border-top:1px solid var(--gborder);border-bottom:1px solid var(--gborder)}
+    .project-stat{font-size:.78rem;color:var(--text-muted)}
+    .project-stat strong{display:block;font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--forest);margin-bottom:.1rem}
+    .project-cta{display:inline-flex;align-items:center;gap:.4rem;font-size:.84rem;font-weight:600;color:var(--gold-dk);transition:gap .2s,color .2s}
+    .project-card:hover .project-cta{gap:.7rem;color:var(--forest)}
+    .project-cta svg{width:14px;height:14px}
+
+    .empty-note{background:rgba(27,67,50,.04);border:1px dashed var(--gborder);border-radius:18px;padding:2rem;text-align:center;color:var(--text-muted);font-size:.9rem;line-height:1.7}
+    .empty-note strong{display:block;color:var(--forest);font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:.4rem}
+
+    footer{position:relative;z-index:1;border-top:1px solid var(--gborder);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--text-muted);flex-wrap:wrap;gap:.5rem}
+    footer a{color:var(--text-lt);transition:color .2s}footer a:hover{color:var(--forest)}
+    .footer-links-inline{display:flex;gap:1.2rem;align-items:center}
+    @media(max-width:600px){nav{padding:1rem 1.2rem}.hero{padding:3.5rem 1.2rem 4rem}.list-wrap{padding:2.5rem 1.2rem 3.5rem}.project-card{padding:1.6rem 1.5rem}footer{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+<noscript><div style="background:#c53030;color:white;text-align:center;padding:1rem;font-size:.9rem">This website requires JavaScript to function.</div></noscript>
+
+<nav>
+  <a href="/" class="logo"><img src="/Moosatrustlogo.png" alt="Moosa Trust UK" class="logo-img" width="36" height="36"><div class="logo-text">Moosa Trust <span>UK Charitable Trust</span></div></a>
+  <a href="/" class="nav-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg> Back to main site</a>
+</nav>
+
+<main>
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <span class="label">Where Your Money Goes</span>
+      <h1>Our <em>Projects</em></h1>
+      <p class="hero-sub">Every project is named, costed, and reported on. Real photographs, real beneficiaries, real accountability — that's the standard we hold ourselves to.</p>
+    </div>
+    <div class="hero-fade"></div>
+  </div>
+
+  <div class="list-wrap">
+
+    <div class="filter-bar"><span class="filter-chip">Clean Water</span><span class="filter-chip">Education</span><span class="filter-chip">Poverty Relief</span></div>
+
+    <a class="project-card" href="/projects/sri-lanka-well/">
+      <div class="project-status status-funded"><span class="dot"></span>Funded &amp; Donated</div>
+      <p class="project-cause">Clean Water &middot; Sri Lanka</p>
+      <h2 class="project-title">Clean Water Well in Sri Lanka</h2>
+      <p class="project-desc">Our first project. £500 raised from family and community to fund a branded water well — providing clean, safe drinking water to families who need it most. A Sadaqah Jariyah flowing long after we're gone.</p>
+      <div class="project-stats">
+        <div class="project-stat"><strong>&pound;500</strong>Total cost</div>
+        <div class="project-stat"><strong>1</strong>Community served</div>
+        <div class="project-stat"><strong>100%</strong>Funds delivered</div>
+      </div>
+      <span class="project-cta">View project details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+    </a>
+
+    <div class="empty-note"><strong>More projects coming soon, insha'Allah.</strong>As funds are raised, every new project will appear here with full costs, partners, and a debrief once delivered.</div>
+
+  </div>
+</main>
+
+<footer>
+  <span>&copy; <span id="yr"></span> Moosa Trust UK</span>
+  <div class="footer-links-inline"><a href="/sitemap/">Sitemap</a><a href="https://wa.me/447854690073" target="_blank" rel="noopener noreferrer">WhatsApp &#x2197;</a><a href="/">moosatrustuk.org</a></div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
