@@ -4,15 +4,15 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our First Project: Water Well in Sri Lanka | Moosa Trust UK</title>
-  <meta name="description" content="Moosa Trust UK's first project — a £500 branded water well in Sri Lanka providing clean water to a community in need. A Sadaqah Jariyah that flows beyond this life."/>
+  <meta name="description" content="Moosa Trust UK's first project — a £500 branded water well in Sallikkelappu, Sri Lanka, now complete and in full use. Photos and project report from our partner Benefit Mankind."/>
   <meta property="og:title" content="Water Well in Sri Lanka | Moosa Trust UK"/>
-  <meta property="og:description" content="£500 raised and donated. Clean water for a community. A Sadaqah Jariyah flowing long after we're gone."/>
+  <meta property="og:description" content="Completed and in full use: £500 raised, one well built in Sallikkelappu, Sri Lanka. A Sadaqah Jariyah flowing long after we're gone."/>
   <meta property="og:url" content="https://moosatrustuk.org/projects/sri-lanka-well/"/>
-  <meta property="og:image" content="https://moosatrustuk.org/og/sri-lanka-well.jpg"/>
+  <meta property="og:image" content="https://moosatrustuk.org/projects/sri-lanka-well/well-community.jpg"/>
   <meta property="og:type" content="article"/>
   <link rel="canonical" href="https://moosatrustuk.org/projects/sri-lanka-well/"/>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Project","name":"Clean Water Well in Sri Lanka","description":"Moosa Trust UK's first project — a £500 branded water well in Sri Lanka providing clean water to a community in need. A Sadaqah Jariyah that flows beyond this life.","url":"https://moosatrustuk.org/projects/sri-lanka-well/","image":"https://moosatrustuk.org/og/sri-lanka-well.jpg","status":"completed","agent":{"@type":"NGO","name":"Moosa Trust UK","url":"https://moosatrustuk.org"},"location":{"@type":"Place","name":"Sri Lanka","address":{"@type":"PostalAddress","addressCountry":"LK"}},"funder":{"@type":"NGO","name":"Moosa Trust UK"}}
+  {"@context":"https://schema.org","@type":"Project","name":"Clean Water Well in Sri Lanka","description":"Moosa Trust UK's first project — a £500 branded water well in Sallikkelappu, Sri Lanka, now complete and in full use. Delivered with Benefit Mankind (ref BM-SRW-211).","url":"https://moosatrustuk.org/projects/sri-lanka-well/","image":"https://moosatrustuk.org/projects/sri-lanka-well/well-community.jpg","status":"completed","agent":{"@type":"NGO","name":"Moosa Trust UK","url":"https://moosatrustuk.org"},"location":{"@type":"Place","name":"Sallikkelappu, Sri Lanka","address":{"@type":"PostalAddress","addressCountry":"LK"}},"funder":{"@type":"NGO","name":"Moosa Trust UK"}}
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,10 +77,19 @@
     .partner-link:hover{gap:.7rem;color:var(--forest)}
     .partner-link svg{width:14px;height:14px}
 
-    /* Photos placeholder */
-    .photos-placeholder{background:var(--stone);border:2px dashed rgba(27,67,50,.15);border-radius:16px;padding:3rem 2rem;text-align:center;margin:2rem 0}
-    .photos-placeholder p{color:var(--text-muted);font-size:.9rem;line-height:1.6}
-    .photos-placeholder p:first-child{font-weight:600;color:var(--text-lt);margin-bottom:.4rem}
+    /* Project report details */
+    .report-list{display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.5rem;font-size:.9rem;margin:0}
+    .report-list dt{color:var(--text-muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;padding-top:.15rem}
+    .report-list dd{color:var(--forest);font-weight:500}
+
+    /* Photos */
+    .photo-subhead{font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--text-muted);font-weight:600;margin:2rem 0 .8rem}
+    .photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1rem}
+    .photo-grid figure{margin:0}
+    .photo-grid img{width:100%;height:auto;object-fit:cover;border-radius:12px;aspect-ratio:4/3;background:var(--stone)}
+    .photo-grid figcaption{font-size:.78rem;color:var(--text-muted);font-style:italic;text-align:center;margin-top:.5rem;line-height:1.5}
+    .photo-grid .wide{grid-column:1/-1}
+    .photo-grid .wide img{aspect-ratio:auto}
 
     /* Sadaqah jariyah callout */
     .sj-callout{background:linear-gradient(135deg,rgba(27,67,50,.06),rgba(201,148,58,.06));border:1px solid rgba(201,148,58,.2);border-radius:16px;padding:2rem;text-align:center;margin:2.5rem 0}
@@ -98,6 +107,7 @@
     footer{position:relative;z-index:1;border-top:1px solid var(--gborder);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--text-muted);flex-wrap:wrap;gap:.5rem}
     footer a{color:var(--text-lt);transition:color .2s}footer a:hover{color:var(--forest)}
     .footer-links-inline{display:flex;gap:1.2rem;align-items:center}
+    @media(max-width:600px){.photo-grid{grid-template-columns:1fr}.report-list{grid-template-columns:1fr;gap:.15rem}.report-list dd{margin-bottom:.6rem}}
     @media(max-width:580px){footer{flex-direction:column;text-align:center}.progress-stats{flex-direction:column;gap:1rem}}
   </style>
 </head>
@@ -113,10 +123,10 @@
   <div class="project-hero">
     <div class="project-hero-bg"></div>
     <div class="project-hero-inner">
-      <div class="project-status"><div class="project-status-dot"></div> Funded &amp; Donated</div>
+      <div class="project-status"><div class="project-status-dot"></div> Completed &middot; In Use</div>
       <p class="project-label">Our First Project</p>
       <h1 class="project-title">Clean Water Well<br><em>in Sri Lanka</em></h1>
-      <p class="project-subtitle">£500 raised from our community to fund a branded water well — providing clean, safe drinking water to families who need it most. A Sadaqah Jariyah flowing long after we're gone.</p>
+      <p class="project-subtitle">£500 raised from our community has built a branded water well in Sallikkelappu, Sri Lanka — now complete and giving families clean, safe water every day. A Sadaqah Jariyah flowing long after we're gone.</p>
     </div>
     <div class="project-hero-fade"></div>
   </div>
@@ -133,17 +143,17 @@
       <div class="progress-stats">
         <div class="progress-stat"><div class="progress-stat-n">100%</div><div class="progress-stat-l">Funded</div></div>
         <div class="progress-stat"><div class="progress-stat-n">£500</div><div class="progress-stat-l">Donated</div></div>
-        <div class="progress-stat"><div class="progress-stat-n">Sri Lanka</div><div class="progress-stat-l">Location</div></div>
-        <div class="progress-stat"><div class="progress-stat-n">Branded</div><div class="progress-stat-l">Moosa Trust UK Well</div></div>
+        <div class="progress-stat"><div class="progress-stat-n">Sallikkelappu</div><div class="progress-stat-l">Sri Lanka</div></div>
+        <div class="progress-stat"><div class="progress-stat-n">Completed</div><div class="progress-stat-l">In full use</div></div>
       </div>
     </div>
 
     <!-- About the project -->
     <p class="section-label">About This Project</p>
     <h2 class="section-heading">Our first step toward lasting change</h2>
-    <p class="section-text">This is where Moosa Trust UK began — with a simple goal: fund one water well for one community. £500 was raised from family and community donations, and the full amount has been donated to commission a branded Moosa Trust UK water well in Sri Lanka.</p>
-    <p class="section-text">The well is being delivered through Benefit Mankind, an established charity with experience and infrastructure on the ground. As a new trust, we work with established organisations like this to leverage their expertise and economies of scale — ensuring your donations are delivered effectively and efficiently. As we grow and build our own knowledge, we hope to deliver projects directly in the future, insha'Allah.</p>
-    <p class="section-text">Once the well is complete, this page will be updated with photographs, location details, and a full impact report showing exactly how your generosity translated into clean water for real families.</p>
+    <p class="section-text">This is where Moosa Trust UK began — with a simple goal: fund one water well for one community. £500 was raised from family and community donations, and the full amount was donated to build a branded Moosa Trust UK water well in Sallikkelappu, Sri Lanka.</p>
+    <p class="section-text">The well was delivered through Benefit Mankind, an established charity with experience and infrastructure on the ground. As a new trust, we work with established organisations like this to leverage their expertise and economies of scale — ensuring your donations are delivered effectively and efficiently. As we grow and build our own knowledge, we hope to deliver projects directly in the future, insha'Allah.</p>
+    <p class="section-text"><strong style="color:var(--forest)">Alhamdulillah, the well is now complete and in full use.</strong> Benefit Mankind has sent us their project report confirming completion, along with photographs from construction through to the finished well. Families who previously lacked a reliable source of clean water now draw it on their doorstep, every day.</p>
 
     <div class="content-divider"></div>
 
@@ -152,18 +162,65 @@
     <h2 class="section-heading">Delivered with Benefit Mankind</h2>
     <div class="partner-card">
       <h3>Benefit Mankind — Water Programme</h3>
-      <p>Our well is being commissioned through Benefit Mankind's water programme, which delivers clean water infrastructure across communities in South Asia. They provide end-to-end delivery, local oversight, and photographic evidence of completion.</p>
+      <p>Our well was built through Benefit Mankind's water programme, which delivers clean water infrastructure across communities in South Asia. They provide end-to-end delivery, local oversight, and photographic evidence of completion.</p>
       <a href="https://benefitmankind.co.uk/water/" target="_blank" rel="noopener noreferrer" class="partner-link">Visit Benefit Mankind's Water Programme <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
     </div>
 
     <div class="content-divider"></div>
 
+    <!-- Project report -->
+    <p class="section-label">Project Report</p>
+    <h2 class="section-heading">Complete and in full use</h2>
+    <p class="section-text">Summary of the completion report from Benefit Mankind:</p>
+    <div class="partner-card">
+      <dl class="report-list">
+        <dt>Project</dt><dd>Sri Lanka Water Well</dd>
+        <dt>Reference</dt><dd>BM-SRW-211</dd>
+        <dt>Location</dt><dd>Sallikkelappu, Sri Lanka</dd>
+        <dt>Cost</dt><dd>&pound;500.00 &mdash; 100% of funds raised</dd>
+        <dt>Status</dt><dd>Completed &amp; in full use</dd>
+        <dt>Delivered by</dt><dd>Benefit Mankind (Registered Charity No. 1187849)</dd>
+      </dl>
+    </div>
+    <p class="section-text">In their report, Benefit Mankind note that people in some of the most impoverished and marginalised communities still lack access to clean drinking water — and that this well gives these families &ldquo;one less source of concern.&rdquo;</p>
+
+    <div class="content-divider"></div>
+
     <!-- Photos -->
     <p class="section-label">Project Photos</p>
-    <h2 class="section-heading">Coming soon, insha'Allah</h2>
-    <div class="photos-placeholder">
-      <p>Photos will be added once the well is completed</p>
-      <p>We'll share images of the finished well, the community it serves, and the Moosa Trust UK branding on-site. Check back soon for the full update.</p>
+    <h2 class="section-heading">From construction to clean water</h2>
+    <p class="section-text">Real photographs from Sallikkelappu, supplied by Benefit Mankind. Not stock images.</p>
+
+    <p class="photo-subhead">During construction</p>
+    <div class="photo-grid">
+      <figure>
+        <img src="build-lining.jpg" alt="A worker stands inside the excavated pit with the brick lining of the new well in Sallikkelappu, holding the Moosa Trust UK sign" loading="lazy" decoding="async" width="569" height="320">
+        <figcaption>Laying the brick lining of the well.</figcaption>
+      </figure>
+      <figure>
+        <img src="build-rendering.jpg" alt="Workers rendering the concrete well head and building its red support pillars during construction in Sallikkelappu" loading="lazy" decoding="async" width="587" height="440">
+        <figcaption>Rendering the well head and raising the pillars.</figcaption>
+      </figure>
+    </div>
+
+    <p class="photo-subhead">The finished well</p>
+    <div class="photo-grid">
+      <figure class="wide">
+        <img src="well-pouring.jpg" alt="A young man pours a bucket of water from the new well while children laugh and splash in basins below" loading="lazy" decoding="async" width="2000" height="1500">
+        <figcaption>The first buckets drawn &mdash; and plenty of smiles.</figcaption>
+      </figure>
+      <figure>
+        <img src="well-drinking.jpg" alt="A young girl drinks clean water from a cup beside the finished red well and its Moosa Trust UK sign" loading="lazy" decoding="async" width="1593" height="1194">
+        <figcaption>Clean, safe water to drink.</figcaption>
+      </figure>
+      <figure>
+        <img src="well-community.jpg" alt="A local family — a mother, a young man and three children — standing beside the completed Moosa Trust UK water well" loading="lazy" decoding="async" width="2000" height="1500">
+        <figcaption>Some of the family the well now serves.</figcaption>
+      </figure>
+      <figure class="wide">
+        <img src="well-finished.jpg" alt="The completed red water well with its pulley, bucket and 'Water Well Sri Lanka – Moosa Trust UK' sign" loading="lazy" decoding="async" width="2000" height="1500">
+        <figcaption>The completed Moosa Trust UK well, ref BM-SRW-211.</figcaption>
+      </figure>
     </div>
 
     <!-- Sadaqah Jariyah callout -->
